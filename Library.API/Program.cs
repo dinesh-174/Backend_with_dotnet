@@ -6,6 +6,9 @@ using Library.Application.Services;
 using Library.Application.Interfaces;
 using Library.Application.Services;
 using Library.Infrastructure.Repositories;
+using Library.Application.AI.Interfaces;
+using Library.Infrastructure.AI;
+using Library.Application.AI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +28,24 @@ builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
 builder.Services.AddScoped<IMemberService, MemberService>();
+builder.Services.AddScoped<
+    ILibraryAssistantService,
+    LibraryAssistantService
+>();
+builder.Services.AddScoped<
+    ILibraryDataQueryService,
+    LibraryDataQueryService
+>();
+builder.Services.AddScoped<
+    ILibraryQueryPlanner,
+    LibraryQueryPlanner
+>();
+builder.Services.AddHttpClient<IOllamaClient, OllamaClient>(client =>
+{
+    client.BaseAddress = new Uri("http://localhost:11434");
+
+    client.Timeout = TimeSpan.FromMinutes(3);
+});
 // STEP 3: Build the application
 var app = builder.Build();
 

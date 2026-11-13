@@ -17,3 +17,4 @@ C:\Users\slim\LibraryManagementSystem\Library.Infrastructure\obj\Debug\net10.0\L
 C:\Users\slim\LibraryManagementSystem\Library.Infrastructure\obj\Debug\net10.0\Library.Infrastructure.genruntimeconfig.cache
 C:\Users\slim\LibraryManagementSystem\Library.Infrastructure\bin\Debug\net10.0\Library.Application.dll
 C:\Users\slim\LibraryManagementSystem\Library.Infrastructure\bin\Debug\net10.0\Library.Application.pdb
+C:\Users\slim\LibraryManagementSystem\Library.Infrastructure\obj\Debug\net10.0\Library.Infrastructure.sourcelink.json

@@ -13,3 +13,4 @@ C:\Users\slim\LibraryManagementSystem\Library.Application\bin\Debug\net10.0\Libr
 C:\Users\slim\LibraryManagementSystem\Library.Application\bin\Debug\net10.0\Library.Core.pdb
 C:\Users\slim\LibraryManagementSystem\Library.Application\obj\Debug\net10.0\Library.Application.csproj.AssemblyReference.cache
 C:\Users\slim\LibraryManagementSystem\Library.Application\obj\Debug\net10.0\Library..D137A66B.Up2Date
+C:\Users\slim\LibraryManagementSystem\Library.Application\obj\Debug\net10.0\Library.Application.sourcelink.json
